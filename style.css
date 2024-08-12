@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #fcfcfc;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 15px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #000;
+}
+
+.form :where(.input-box input, .select-box, .result) {
+  position: relative;
+  height: 35px;
+  width: 29.3rem;
+  outline: none;
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 5px;
+  border: 1px solid #494746;
+  border-radius: 6px;
+  padding: 0 15px;
+  background: #fcedda;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .type-box {
+  margin-top: 10px;
+}
+
+.form :where(.type-option, .type) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .type {
+  column-gap: 5px;
+}
+
+.type input {
+  accent-color: #000000;
+}
+
+.form :where(.type input, .type label) {
+  cursor: pointer;
+}
+
+.type label {
+  color: #000;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 10px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #000000;
+  font-size: 1rem;
+  background: #fcedda;
+}
+
+.form button {
+  display: none;
+}
+
+.form button:hover {
+  background: #ee3e34;
+}
+.result {
+  text-align: center;
+  color: black;
+}
+.T {
+  display: none;
+}
+.error {
+  color: red;
+  display: none;
+}
+.calc {
+  display: block;
+}
+#Weisskopf {
+  display: flex;
+  width: 20rem;
+}
+.yes {
+  margin-right: 3rem;
+}
+.result{
+  height: fit-content;
+  text-align: left;
+}
